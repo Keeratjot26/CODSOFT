@@ -8,10 +8,6 @@ package guessgame;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- *
- * @author DELL
- */
 public class GuessGame {
 
     /**
@@ -29,9 +25,9 @@ public class GuessGame {
             int attempts = 0;
             int maxAttempts = 5;
             int score = 10; // INITIALIZING THE SCORE TO 10 
-            boolean correctGuess = false; // initialized with alse because at the start of the game user hasnt guessed the number corectly 
+            boolean correctGuess = false; // initialized with false because at the start of the game user hasnt guessed the number corectly 
             
-            System.out.println("I'm thinking of a number between 1 and 100. Can you guess it?");
+            System.out.println("A number between 1 and 100 has been chosen. Can you guess it?");
              while(attempts<maxAttempts && !correctGuess){
              
                  System.out.print("Enter your guess(Attempt "+(attempts+1)+ " of "+ maxAttempts + "): ");
@@ -61,7 +57,7 @@ public class GuessGame {
             System.out.print("Do you want to play again? (Yes/No): ");
             playAgain = sc.next().equalsIgnoreCase("Yes");
         }while(playAgain);
-        System.out.println("Thanks for Playing!!");
-    }
-    
+        System.out.println("Thanks for Playing!!");                                
+}
+                    
 }

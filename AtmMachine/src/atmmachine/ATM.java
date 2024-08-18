@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author DELL
  */
 public class ATM {
-   private double balance;
+   private double balance; 
    private double withdrawamount;
    private double depositamount;
    
@@ -35,6 +35,5 @@ public class ATM {
       return balance;
     }
 
-    
-
+  
 }

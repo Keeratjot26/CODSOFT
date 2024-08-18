@@ -14,7 +14,7 @@ ATM atm = new ATM();
 
     @Override
     public void depositAmount(double depositamount) {
-      System.out.println(depositamount + " deposited successfully!!");  
+      System.out.println(depositamount + " deposited successfully!!");  //--> your amount+ deposit + has beeen deposited 
       atm.setbalance(atm.getbalance()+depositamount);
       viewBalance();
     }

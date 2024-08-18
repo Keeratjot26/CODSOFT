@@ -18,8 +18,8 @@ public class AtmMachine {
      */
     public static void main(String[] args) {
         AtmOperation op = new AtmImplementation();
-        int atmnum = 12;
-        int pin = 1;
+        int atmnum = 123456;
+        int pin = 1234;
         System.out.println("Welcome to the ATM!!");
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the ATM Number:");
@@ -39,8 +39,8 @@ public class AtmMachine {
                  {
                     op.viewBalance();
                     break;
-                 }
-                     
+                 }  
+                   
                  case 2:
                  {
                      System.out.print("Enter the amount to be Deposited: ");

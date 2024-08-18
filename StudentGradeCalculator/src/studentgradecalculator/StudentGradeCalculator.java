@@ -22,15 +22,15 @@ public class StudentGradeCalculator {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of Subjects: ");
         int numS = sc.nextInt();
-        int marks[] = new int [numS];// Array marks[] stores marks obtained in each subject
+        int marks[] = new int [numS];// Array marks[] stores marks obtained in each subject; // numS --> number of subjects 
         int total = 0;
          
         for(int i = 0; i < numS ;i++){
            
            System.out.println("Enter marks of Subject "+(i+1)+": ");
-              marks[i]=sc.nextInt(); 
+              marks[i]=sc.nextInt(); // marks[i] --> stores the marks given by the user 
               if(0<=marks[i]&& marks[i]<=100){
-                  System.out.println("Marks in Subject" +(i+1)+":"+ marks[i]);
+                  System.out.println("Marks in Subject" +(i+1)+": "+ marks[i]);
                   total+=marks[i];// only add the valid marks after satisfying the conditions 
               }
               else{
@@ -45,8 +45,8 @@ public class StudentGradeCalculator {
         System.out.println("Your percentage is :"+ avg +"%");
        
         char grade;
-        if(avg <30 ){
-            grade = 'F';
+        if(avg <30 ){ 
+            grade = 'F'; 
         }
         else if(avg<=40){
             grade = 'E';
